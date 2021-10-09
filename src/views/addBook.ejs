@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+       <title>NewBook</title>
+       <link rel="stylesheet" href="./CSS/signUp.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+       <meta name="generator" content="Bootply" />
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+	  	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+      
+</head>
+<body>
+     <!-- top navbar -->
+        
+      
+        
+      <!-- <nav class="navbar navbar-expand-md navbar-custom bg-dark navbar-dark"> -->
+        <!-- Brand -->
+        <!-- <a class="navbar-brand" href="#">
+          <img src="images/lampp.gif" alt="logo" style="height: 20px; width: 20px;">
+        </a> -->
+        <!-- <label class="logo" style="color: rgb(22, 19, 19); font-size: 3vw; margin-top: -30vh;">PUBLIC LIBRARY</label> -->
+        
+        <!-- Toggler/collapsibe Button -->
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+      
+        <!-- Navbar links -->
+        <!-- <a href="/" class="navbar-brand"></a>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+            
+                <%for(i=0;i<nav.length;i++){%>
+                <li class="nav-item">
+                   <%if (nav[i].name=='Signup'){%>
+                       <a class="nav-link" style="background-color:peachpuff; color: maroon;" href="<%=nav[i].link%>"><%=nav[i].name%></a>
+                   <%}
+                   else{%>
+                       <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].name%></a>
+                  <% } %>                    
+                </li>
+               <%}%>
+            </ul>
+        </div>
+    </nav>
+</nav> -->
+<!--navbar ends-->
+   
+   <!-- New Navbar -->
+
+   <nav class="navbar navbar-expand-md navbar-custom bg-dark navbar-dark">
+    <a href="/" class="navbar-brand"></a>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+        
+            <%for(i=0;i<nav.length;i++){%>
+            <li class="nav-item">
+               <%if (nav[i].name=='Home'){%>
+                   <a class="nav-link" style="background-color:peachpuff; color: maroon;" href="<%=nav[i].link%>"><%=nav[i].name%></a>
+               <%}
+               else{%>
+                   <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].name%></a>
+              <% } %>                    
+            </li>
+           <%}%>
+        </ul>
+    </div>
+   </nav>
+</nav>
+   </nav>
+   <!-- New Navbar Ends -->
+
+   
+    <div class="container">
+      <div class="heading">
+          <h1 style="margin-left: 10%;">Add New Book</h1>
+      </div>
+      <form action="/index" onsubmit="return checkInput()" class="form" id="form">
+          <div class="form-control" >
+              <label >Name of the Book</label> 
+              <input type="text" placeholder="Enter Book name" id="name" name="Uname" >
+              <i class="fa fa-check-square"></i>
+             <i class="fa fa-exclamation-triangle"></i>
+              <small>Error message</small>
+          </div>
+          
+ 
+          <div class="form-control" >
+             <label >Author's Name</label> 
+             <input type="text" placeholder="Enter authors name" id="email" >
+             <i class="fa fa-check-square"></i>
+             <i class="fa fa-exclamation-triangle"></i>
+             <small>Error message</small>
+         </div>
+         
+ 
+         <!-- <div class="form-control">
+             <label >Mobile Number</label> 
+             <input type="number" placeholder="Enter your Mobile number" id="mob" >
+             <i class="fa fa-check-square"></i>
+             <i class="fa fa-exclamation-triangle"></i>
+             <small>Error message</small>
+         </div>
+         -->
+ 
+         <div class="form-control">
+             <label >Genre</label> 
+             <input type="text" placeholder="Enter genre of book" id="username" >
+             <i class="fa fa-check-square"></i>
+             <i class="fa fa-exclamation-triangle"></i>
+             <small>Error message</small>
+         </div>
+         <div class="form-control">
+          <label >Published Date</label> 
+          <input type="text" placeholder="" id="date" >
+          <i class="fa fa-check-square"></i>
+          <i class="fa fa-exclamation-triangle"></i>
+          <small>Error message</small>
+         </div>
+        
+         
+         <!-- <div class="form-control">
+             <label >Password</label> 
+             <input type="password" placeholder="Enter your password" id="pswd" >
+             <i class="fa fa-check-square"></i>
+             <i class="fa fa-exclamation-triangle"></i>
+             <small>Error message</small>
+         </div> -->
+
+         <!-- <div class="form-control">
+         <div class="indicator" style="border-radius: 3px;">
+             <p class="strength" id="length" style="border-radius: 3px;padding: 2px;"></p>
+         </div></div> -->
+         
+         
+         <!-- <div class="form-control">
+             <label >Check your password</label> 
+             <input type="password" placeholder="Password once again.." id="cpswd">
+             <i class="fa fa-check-square"></i>
+             <i class="fa fa-exclamation-triangle"></i>
+             <small>Error message</small>
+         </div><br>
+         <div>
+           <p><b>Already have an account<a href="/login">Login</a></b></p><br>
+         </div> -->
+         
+         <button class="button" type="submit">Submit</button>
+      </form>
+     </div>
+
+     <!-- footer starts here -->
+     <footer style="margin-bottom: -18vh; background-color: white;">
+      <div class="content container-fluid"  ><br>
+        <div class="row">
+          <div class="col-sm-5">
+            <p > &copy;All Rights Reserved</p>
+          </div> 
+
+          <div class="col-md-3">
+            <nav class="navbar navbar-default" role="navigation">
+                <a href="#" target="_blank"><span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse "></i>
+                </span></a>
+                <a href="#" target="_blank"><span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x "></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse "></i>
+                </span></a>
+                <a href="#" target="_blank"><span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x "></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span></a>
+                <a href="#" target="_blank"><span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x "></i>
+                  <i class="fa fa-google-plus fa-stack-1x fa-inverse "></i>
+                </span></a>
+                <a href="#" target="_blank"><span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span></a>
+              </div>
+              <div class="col-sm-3">
+              <!-- <ul class="nav navbar-nav navbar-right" >
+                
+                <li><a href="#" style="text-decoration: none;">Terms of Use</a></li>
+                <li><a href="#" style="text-decoration: none;">Privacy Policy</a></li>
+              </ul> -->
+            </nav>
+          </div>
+        </div> 
+      </div> 
+      </footer>
+      <!-- /footer -->
+    
+  <script src="./js/addBook.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color:rgb(248, 247, 198) !important;
+}
+.navbar-custom{  
+  font-family: 'Lucida Sans', cursive;
+  font-size: 1.5vw;
+  margin-left: -10px;   
+ 
+}
+
+
+.nav-link{
+  color: black;
+}
+.nav-item{
+  margin: 0 15px;    
+}
+
+.jumbotron-custom{   
+  background-color: rgb(10, 34, 4) !important;    
+  margin-top: -20px; 
+}
+.jumbotron-custom h1{
+  font-family: 'Lucida Sans', cursive !important;
+  font-size: 8vw !important;  
+  padding-left: 20%  !important;
+ 
+}
+.base{
+  width: 100%;
+  min-height: 100vh;
+  background-color:rgb(248, 247, 198);
+  position: absolute;
+ 
+}
+.top{
+  width: 60%;
+  min-height: 80vh;
+  background-color: rgb(201, 233, 128);
+  position: absolute;
+  z-index: +1;
+  margin-left: 20%;
+  margin-top: -5%;
+}
+.card-custom{
+  margin-left: 100px !important;
+  margin-top: 50px !important;
+  border: transparent !important;
+  background-color: rgb(201, 233, 128) !important;
+  border-bottom: 1px maroon solid !important ;
+}
+footer{
+  font-size:0.8em;
+  position: relative;
+  left: 0px;
+  bottom: 8px;
+  width: 100%;
+border-top:10px solid #bbc345;
+  background-color:rgb(248, 247, 198);
+  margin-top: 50px;
+}
+
+footer a{
+color:rgb(10, 61, 13);
+}
+footer a:hover{
+color: white;
+}
+
+footer .fa:hover{
+color:blue;
+}
+footer .phone
+{
+font-size:1.3em;
+font-weight:700;
+}
+footer .navbar-default
+{
+background:transparent;
+border:none;
+border-radius:0px;
+}
+
+.card-title{
+  font-size: xx-large;
+}
+.card-body{
+  font-size: large;
+}
